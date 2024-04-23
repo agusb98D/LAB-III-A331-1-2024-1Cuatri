@@ -32,6 +32,17 @@ header {
   height: 100vh;
 }
 
+@media(max-width:760px) {  
+  header {
+    background-image: none;
+    background: green;
+  }
+}
+
+section {
+
+}
+
 .barra {
   padding-top: 10px;
   display: flex;
@@ -57,4 +68,12 @@ header h1 {
   color: white;
   width: 700px;
   font-size: 50px;
+}
+
+.container-sections {
+  
+}
+
+.container-sections .container-section {
+
 }
