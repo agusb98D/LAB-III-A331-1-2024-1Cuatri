@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="./js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <title>Inmobiliaria</title>
   </head>
   <body>
-    <header>
-      <div class="barra">
+    <header class="flex">
+      <div class="barra flex">
         <img src="./assets/images/logo.svg" alt="Logo Principal" />
 
         <nav>
-          <ul>
+          <ul class="flex">
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Anuncio</a></li>
             <li><a href="#">Blog</a></li>
@@ -63,52 +67,123 @@
       <section>
         <h2>Casas y Departamentos en Venta</h2>
   
-        <div>
-          <img src="./assets/images/anuncio1.jpg" alt="Anuncio 1" />
-          <h3>Casa de Lujo en el Lago</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            molestiae at
-          </p>
-  
-          <b>u$s350.000</b>
-  
-          <div>
-            <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
-          </div>
-        </div>
-  
-        <div>
-          <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
-          <h3>Casa terminados de lujo</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            molestiae at
-          </p>
-  
-          <b>u$s350.000</b>
-  
-          <div>
-            <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
-          </div>
-        </div>
-  
-        <div>
-          <img src="./assets/images/anuncio3.jpg" alt="Anuncio 3" />
-          <h3>Casa con Pileta</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            molestiae at
-          </p>
-  
-          <b>u$s350.000</b>
-  
-          <div>
-            <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
-          </div>
+        <div class="house-articles flex">
+          <article class="card house-article">
+            <div class="card-img">
+              <img src="./assets/images/anuncio1.jpg" alt="Anuncio 1" />
+            </div>
+
+            <div class="card-body flex">
+              <h3>Casa de Lujo en el Lago</h3>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                molestiae at
+              </p>
+      
+              <b>u$s350.000</b>
+    
+              <div class="house-details flex">
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
+                  <span>3</span>
+                </div>
+              </div>
+
+              <a href="">
+                <button class="btn">Ver Propiedad</button>
+              </a>
+            </div>
+          </article>
+    
+          <article class="card house-article">
+            <div class="card-img">
+              <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
+            </div>
+
+            <div class="card-body flex">
+              <h3>Casa terminados de lujo</h3>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                molestiae at
+              </p>
+      
+              <b>u$s350.000</b>
+    
+              <div class="house-details flex">
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
+                  <span>3</span>
+                </div>
+              </div>
+
+              <a href="">
+                <button class="btn">Ver Propiedad</button>
+              </a>
+            </div>
+          </article>
+    
+          <article class="card house-article">
+            <div class="card-img">
+              <img src="./assets/images/anuncio3.jpg" alt="Anuncio 3" />
+            </div>
+
+            <div class="card-body flex">
+              <h3>Casa con Pileta</h3>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                molestiae at
+              </p>
+      
+              <b>u$s350.000</b>
+    
+              <div class="house-details flex">
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
+                  <span>3</span>
+                </div>
+
+                <div class="house-detail flex">
+                  <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
+                  <span>3</span>
+                </div>
+              </div>
+
+              <a href="">
+                <button class="btn">Ver Propiedad</button>
+              </a>
+            </div>
+          </article>
         </div>
       </section>
-  
+
       <section>
         <h2>Encuentra la casa de tus sueños</h2>
       </section>
@@ -128,7 +203,7 @@
 
     <footer>
       <nav>
-        <ul>
+        <ul class="flex">
           <li><a href="#">Nosotros</a></li>
           <li><a href="#">Anuncio</a></li>
           <li><a href="#">Blog</a></li>

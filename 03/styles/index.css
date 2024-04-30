@@ -1,21 +1,6 @@
-:root {
-  --primary-color: #3518b3;
-  --secondary-color: #e0d7bc;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  /* color: var(--primary-color); */
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-
-  background: var(--secondary-color);
+@font-face {
+	font-family: poppins;
+	src: url(../assets/fonts/Poppins-Black.ttf);
 }
 
 header {
@@ -25,11 +10,12 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
 
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   height: 100vh;
+
+  font-family: poppins, sans-serif;
 }
 
 @media(max-width:760px) {  
@@ -39,13 +25,8 @@ header {
   }
 }
 
-section {
-
-}
-
 .barra {
   padding-top: 10px;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -54,7 +35,6 @@ header nav ul {
   text-decoration: none;
   list-style-type: none;
 
-  display: flex;
   flex-direction: row;
   justify-content: right;
 }
@@ -70,10 +50,78 @@ header h1 {
   font-size: 50px;
 }
 
-.container-sections {
-  
+.card {
+  background: #dedede;
+
+  /* border-radius: 1rem; */
+  border: #bebebe solid 2px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar la tarjeta */
 }
 
-.container-sections .container-section {
+.house-articles {
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
 
+  gap: 0.5rem;
+}
+
+.house-article {
+  width: 400px;
+}
+
+.house-article .card-img img {
+  width: 100%;
+  height: auto;
+
+  opacity: 0.75;
+	transition: opacity 2s;
+
+  /* border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem; */
+}
+
+.house-article .card-img img:hover {
+  opacity: 1;
+}
+
+
+.card-body {
+  padding: 0.5rem;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.card-body h3 {
+  font-size: 30px;
+}
+
+.card-body b {
+  font-size: 20px;
+  color: green;
+}
+
+.house-details {
+  width: 100%;
+
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.house-detail {
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+.card-body button {
+  height: 2rem;
+
+  color: white;
+  background: #e08709;
 }
