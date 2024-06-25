@@ -1,5 +1,6 @@
 import { Casa } from "./casa.js";
 import { leer, escribir, limpiar, jsonToObject, objectToJson } from "./local-storage-async.js";
+import { obtenerTodos } from "./api.js";
 import { mostrarSpinner, ocultarSpinner } from "./spinner.js";
 
 const KEY_STORAGE = "casas";
@@ -33,6 +34,10 @@ async function loadItems() {
   });
 
   rellenarTabla();
+
+  // llamada a externo
+  const arr = await obtenerTodos();
+  debugger
 }
 
 /**
